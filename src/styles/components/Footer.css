@@ -1,0 +1,41 @@
+/* Footer component styles */
+@tailwind components;
+
+@layer components {
+  .footer {
+    @apply bg-stone-100 dark:bg-black text-stone-600 dark:text-stone-400;
+  }
+
+  .footer__container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-20;
+  }
+
+  .footer__grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10;
+  }
+
+  .footer__brand {
+    @apply md:col-span-2 lg:col-span-1 mb-8 md:mb-0;
+  }
+
+  .footer__brand-title {
+    @apply text-3xl font-bold text-stone-800 dark:text-white mb-4;
+  }
+
+  .footer__brand-subtitle {
+    @apply text-lg max-w-xs leading-relaxed;
+  }
+
+  .footer__branch-title {
+    @apply font-semibold text-xl text-stone-700 dark:text-stone-200 mb-6;
+  }
+
+  .footer__list {
+    @apply space-y-3 text-lg;
+  }
+
+  .footer__bottom {
+    @apply mt-16 border-t border-stone-300 dark:border-stone-800 pt-10 text-center text-lg;
+  }
+}
+

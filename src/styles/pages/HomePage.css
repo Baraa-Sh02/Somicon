@@ -1,0 +1,81 @@
+/* HomePage styles */
+@tailwind components;
+
+@layer components {
+  .hero {
+    @apply relative h-screen flex items-center justify-center text-white overflow-hidden;
+  }
+
+  .hero__overlay {
+    @apply absolute inset-0 bg-black/60 z-10;
+  }
+
+  .hero__bg {
+    @apply absolute z-0 w-full h-full bg-cover bg-center bg-no-repeat;
+  }
+
+  .hero__content {
+    @apply relative z-20 text-center px-4;
+  }
+
+  .hero__title {
+    @apply text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 text-shadow-xl leading-tight;
+  }
+
+  .hero__subtitle {
+    @apply max-w-4xl mx-auto text-xl md:text-2xl text-stone-200 mb-10 text-shadow leading-relaxed;
+  }
+
+  .hero__cta {
+    @apply inline-flex items-center justify-center px-10 py-5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full text-xl md:text-2xl transition-all duration-300 transform hover:scale-110 shadow-xl hover:shadow-red-500/50 hover:-translate-y-1;
+  }
+
+  .hero__chevron {
+    @apply absolute bottom-10 z-20 animate-bounce;
+  }
+
+  .clients-section {
+    @apply bg-gray-50 dark:bg-stone-900 py-20 relative;
+  }
+
+  .clients-title {
+    @apply text-center text-lg font-semibold text-gray-900 dark:text-stone-200 uppercase tracking-wider mb-12;
+  }
+
+  .logos-track {
+    @apply relative overflow-hidden group;
+  }
+
+  .logos-track__inner {
+    @apply flex animate-marquee group-hover:pause;
+  }
+
+  .logos-track__item {
+    @apply flex-shrink-0 mx-12 flex items-center justify-center;
+  }
+
+  .logos-track__img {
+    @apply h-16 w-auto object-contain opacity-70 dark:opacity-90 transition-all duration-300 hover:opacity-100 hover:scale-110;
+  }
+
+  .cta-banner {
+    @apply bg-red-700 text-white bg-cover bg-center relative overflow-hidden;
+  }
+
+  .cta-banner__container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center;
+  }
+
+  .cta-banner__title {
+    @apply text-4xl md:text-5xl font-bold mb-6 text-shadow-lg;
+  }
+
+  .cta-banner__subtitle {
+    @apply text-red-100 max-w-3xl mx-auto mb-10 text-xl leading-relaxed;
+  }
+
+  .cta-banner__button {
+    @apply px-10 py-5 bg-white text-red-600 font-bold rounded-full text-xl transition-all duration-300 transform hover:scale-110 shadow-xl hover:shadow-black/20 hover:-translate-y-1;
+  }
+}
+

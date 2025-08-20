@@ -1,0 +1,61 @@
+/* ContactPage styles */
+@tailwind components;
+
+@layer components {
+  .contact {
+    @apply py-24 md:py-32;
+  }
+
+  .contact__container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .contact__grid {
+    @apply grid lg:grid-cols-2 gap-20;
+  }
+
+  .contact__card {
+    @apply bg-stone-100 dark:bg-stone-900/50 p-10 rounded-xl shadow-xl;
+  }
+
+  .contact__title {
+    @apply text-3xl font-bold mb-8 text-stone-800 dark:text-white;
+  }
+
+  .contact__form {
+    @apply space-y-6;
+  }
+
+  .contact__input {
+    @apply w-full p-4 rounded-lg bg-white dark:bg-stone-800 border border-stone-300 dark:border-stone-700 focus:ring-2 focus:ring-red-500 outline-none transition text-lg;
+  }
+
+  .contact__textarea {
+    @apply w-full p-4 rounded-lg bg-white dark:bg-stone-800 border border-stone-300 dark:border-stone-700 focus:ring-2 focus:ring-red-500 outline-none transition text-lg resize-none;
+  }
+
+  .contact__submit {
+    @apply w-full py-4 px-8 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-red-500/50 transform hover:scale-105 text-xl;
+  }
+
+  .contact__info-title {
+    @apply text-3xl font-bold text-stone-800 dark:text-white;
+  }
+
+  .contact__info {
+    @apply space-y-12;
+  }
+
+  .contact__branch {
+    @apply flex items-start gap-6;
+  }
+
+  .contact__branch-name {
+    @apply font-bold text-2xl text-stone-800 dark:text-white mb-4;
+  }
+
+  .contact__branch-lines {
+    @apply space-y-3 text-lg text-stone-600 dark:text-stone-300;
+  }
+}
+

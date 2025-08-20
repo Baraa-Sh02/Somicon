@@ -7,16 +7,27 @@
 
 # testing
 /coverage
+*.log
 
 # production
 /build
 
 # misc
 .DS_Store
+Thumbs.db
+.env
+.env.*
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.vscode/
+.idea/
+*.swp
+*.swo
+*.zip
+*.tar
+somicon-website.tar
 
 npm-debug.log*
 yarn-debug.log*

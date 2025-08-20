@@ -1,0 +1,21 @@
+/* PageHeader component styles */
+@tailwind components;
+
+@layer components {
+  .page-header {
+    @apply bg-stone-50 dark:bg-stone-900/50 pt-36 pb-20;
+  }
+
+  .page-header__container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 text-center;
+  }
+
+  .page-header__title {
+    @apply text-5xl md:text-6xl lg:text-7xl font-extrabold text-stone-800 dark:text-white tracking-tight leading-tight;
+  }
+
+  .page-header__subtitle {
+    @apply mt-6 text-xl md:text-2xl text-stone-600 dark:text-stone-300 max-w-4xl mx-auto leading-relaxed;
+  }
+}
+

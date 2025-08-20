@@ -1,0 +1,72 @@
+/* Header component styles */
+@tailwind components;
+
+@layer components {
+  .header {
+    @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+  }
+
+  .header--solid {
+    @apply bg-white/98 dark:bg-stone-950/98 backdrop-blur-md shadow-lg;
+  }
+
+  .header--transparent {
+    @apply bg-transparent;
+  }
+
+  .header__brand {
+    @apply flex items-center gap-3 group transition-all duration-300 hover:scale-105;
+  }
+
+  .header__brand-title {
+    @apply text-4xl font-bold text-red-600 group-hover:text-red-700 transition-colors duration-300;
+  }
+
+  .header__nav {
+    @apply hidden md:flex items-center gap-10;
+  }
+
+  .header__nav-link {
+    @apply text-xl font-medium transition-all duration-300 hover:text-red-600 dark:hover:text-red-500 relative hover:scale-105;
+  }
+
+  .header__nav-link--active {
+    @apply text-red-600 dark:text-red-500 font-semibold;
+  }
+
+  /* Pseudo-element underline using plain CSS (not @apply) */
+  .header__nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(220 38 38 / 1); /* red-600 */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease;
+  }
+
+  .header__nav-link:hover::after,
+  .header__nav-link--active::after {
+    transform: scaleX(1);
+  }
+
+  .header__controls {
+    @apply flex items-center gap-4;
+  }
+
+  .header__control {
+    @apply p-3 rounded-full hover:bg-gray-100 dark:hover:bg-stone-800 transition-all duration-300 hover:scale-110 shadow-md hover:shadow-lg;
+  }
+
+  .header__mobile-menu {
+    @apply md:hidden bg-white/95 dark:bg-stone-950/95 backdrop-blur-md shadow-lg;
+  }
+
+  .header__mobile-link {
+    @apply w-full text-start block px-4 py-4 rounded-lg text-xl font-medium transition-all duration-300 hover:scale-105;
+  }
+}
+
