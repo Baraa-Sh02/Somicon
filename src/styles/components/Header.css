@@ -7,7 +7,7 @@
   }
 
   .header--solid {
-    @apply bg-white bg-opacity-98 dark:bg-stone-950 dark:bg-opacity-98 backdrop-blur-md shadow-lg;
+    @apply bg-white bg-opacity-95 dark:bg-stone-950 dark:bg-opacity-95 backdrop-blur-md shadow-lg;
   }
 
   .header--transparent {
@@ -62,7 +62,7 @@
   }
 
   .header__mobile-menu {
-    @apply md:hidden bg-white bg-opacity-95 dark:bg-stone-950 dark:bg-opacity-95 backdrop-blur-md shadow-lg;
+    @apply md:hidden bg-white bg-opacity-90 dark:bg-stone-950 dark:bg-opacity-90 backdrop-blur-md shadow-lg;
   }
 
   .header__mobile-link {

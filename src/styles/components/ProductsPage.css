@@ -51,11 +51,11 @@
   }
 
   .product-card__list-item {
-    @apply flex items-center gap-4 text-lg text-stone-700 dark:text-stone-200 group/item hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300;
+    @apply flex items-center gap-4 text-lg text-stone-700 dark:text-stone-200 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300;
   }
 
   .product-card__dot {
-    @apply flex-shrink-0 w-2 h-2 bg-red-500 rounded-full group-hover/item:scale-150 transition-transform duration-300;
+    @apply flex-shrink-0 w-2 h-2 bg-red-500 rounded-full transition-transform duration-300;
   }
 }
 

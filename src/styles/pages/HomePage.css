@@ -43,11 +43,25 @@
   }
 
   .logos-track {
-    @apply relative overflow-hidden group;
+    @apply relative overflow-hidden;
   }
 
   .logos-track__inner {
-    @apply flex animate-marquee group-hover:pause;
+    @apply flex;
+    animation: marquee 20s linear infinite;
+  }
+
+  .logos-track:hover .logos-track__inner {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
   .logos-track__item {

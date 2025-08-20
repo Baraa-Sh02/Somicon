@@ -41,7 +41,7 @@ const HomePage = ({ data, handleNavClick }) => {
                 <Animated type="fadeInUp">
                     <h3 className="clients-title">{data.home.clients.title}</h3>
                 </Animated>
-                <div className="logos-track">
+                <div className="logos-track group">
                      <div className="logos-track__inner">
                          {data.home.clients.logos.concat(data.home.clients.logos).map((logo, index) => (
                              <div key={index} className="logos-track__item">

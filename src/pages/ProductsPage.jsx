@@ -24,8 +24,8 @@ const ProductsPage = ({ data }) => (
                                      <p className="product-card__desc">{cat.description}</p>
                                      <ul className="product-card__list">
                                          {cat.items.map((item) => (
-                                             <li key={item} className="product-card__list-item">
-                                                 <div className="product-card__dot"></div>
+                                             <li key={item} className="product-card__list-item group/item">
+                                                 <div className="product-card__dot group-hover/item:scale-150"></div>
                                                  <span className="font-medium">{item}</span>
                                              </li>
                                          ))}
