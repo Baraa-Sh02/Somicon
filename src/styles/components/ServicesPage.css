@@ -15,7 +15,7 @@
   }
 
   .service-card {
-    @apply bg-white dark:bg-stone-800 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-pointer group h-full flex flex-col;
+    @apply bg-white dark:bg-stone-800 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-pointer h-full flex flex-col;
   }
 
   .service-card__image-wrapper {

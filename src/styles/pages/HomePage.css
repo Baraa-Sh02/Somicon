@@ -19,11 +19,11 @@
   }
 
   .hero__title {
-    @apply text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 text-shadow-xl leading-tight;
+    @apply text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight;
   }
 
   .hero__subtitle {
-    @apply max-w-4xl mx-auto text-xl md:text-2xl text-stone-200 mb-10 text-shadow leading-relaxed;
+    @apply max-w-4xl mx-auto text-xl md:text-2xl text-stone-200 mb-10 leading-relaxed;
   }
 
   .hero__cta {
@@ -67,7 +67,7 @@
   }
 
   .cta-banner__title {
-    @apply text-4xl md:text-5xl font-bold mb-6 text-shadow-lg;
+    @apply text-4xl md:text-5xl font-bold mb-6;
   }
 
   .cta-banner__subtitle {

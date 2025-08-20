@@ -54,7 +54,7 @@ const ServicesPage = ({ handleNavClick, data, dir }) => {
                     {services.map((service, index) => (
                         <Animated key={service.title} delay={index * 200} type="fadeInUp">
                             <div 
-                                className="service-card"
+                                className="service-card group"
                                 onClick={() => handleNavClick(service.pageIndex)}
                             >
                                 <div className="service-card__image-wrapper">

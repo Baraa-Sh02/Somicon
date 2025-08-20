@@ -28,7 +28,7 @@ const Header = ({ isScrolled, data, activePage, handleNavClick, isMenuOpen, setI
                 <div className="flex items-center justify-between h-24">
                     <div className="flex-shrink-0">
                         <button 
-                            className="header__brand"
+                            className="header__brand group"
                             onClick={() => handleNavClick(0)}
                         >
                              <span className="header__brand-title">{data.companyName}</span>

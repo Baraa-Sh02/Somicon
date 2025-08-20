@@ -11,7 +11,7 @@ const ProductsPage = ({ data }) => (
                 <div className="products__grid">
                     {data.categories.map((cat, index) => (
                          <Animated key={cat.name} type="fadeInUp" delay={index * 200}>
-                             <div className="product-card">
+                             <div className="product-card group">
                                  <div className="product-card__image-wrapper">
                                      <img src={cat.image} alt={cat.name} className="product-card__image"/>
                                      <div className="product-card__image-overlay"></div>
